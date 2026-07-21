@@ -1,35 +1,35 @@
-SQL Server Data Warehouse Project (Medallion Architecture)
+**SQL Server Data Warehouse Project (Medallion Architecture)**
+
 An end-to-end SQL Server Data Warehouse project implementing the Medallion Architecture (Bronze → Silver → Gold). The goal is to demonstrate real-world analytics engineering practices: requirements-driven modeling, layered transformations, data quality checks, and documentation (architecture + star schema + catalog) in a clean, version-controlled repository.
-Tech Stack
-Database: Microsoft SQL Server
-Language: T-SQL
-Modeling Approach: Medallion Architecture + dimensional modeling (Star Schema)
-Quality: SQL-based validation checks (completeness, schema, correctness, integration)
-Repository Structure
-sql-data-warehouse-project/
-├─ Scripts/
-│  ├─ 00_setup/              # DB + schemas + utilities
-│  ├─ 10_bronze/             # raw ingestion (landing)
-│  ├─ 20_silver/             # cleansing + standardization
-│  ├─ 30_gold/               # star schema + marts
-│  └─ 99_admin/              # optional: maintenance, indexes, permissions
-├─ datasets/                 # source extracts / sample files (if shareable)
-├─ documents/                # diagrams, catalog, architecture notes
-├─ tests/                    # test queries + expected outcomes
-├─ LICENSE
-└─ README.md
+
+**Tech Stack**
+
+**Database:** Microsoft SQL Server 
+
+**Language:** T-SQL 
+
+**Modeling Approach:** Medallion Architecture + dimensional modeling (Star Schema) 
+
+**Quality:** SQL-based validation checks (completeness, schema, correctness, integration)
+
+
 ​
-Architecture (Bronze → Silver → Gold)
+**Architecture (Bronze → Silver → Gold)**
 Bronze (Raw / Landing)
+
 Stores data as received from source systems
+
 Focus: traceability, minimal transformation, schema/completeness checks
+
 Silver (Clean / Conformed)
-Cleaned and standardized datasets
+
+**Cleaned and standardized datasets**
 Focus: deduplication, type fixes, conformance, business rule validation
 Gold (Business / Analytics-ready)
 Dimensional model (facts + dimensions) for BI/analytics
 Focus: star schema, integration checks, curated metrics
-How to Run (SQL Server)
+
+**How to Run (SQL Server)**
 1) Create Database & Schemas
 Run scripts in order:
 Scripts/00_setup/01_create_database.sql
@@ -62,8 +62,10 @@ Data flow (ETL/ELT) diagram
 Star schema model
 Data catalog (definitions of facts/dimensions and business rules)
 Roadmap (Implemented from Project Plan)
-Requirement analysis  
-Data architecture design  
+Requirement analysis
+
+**Data architecture design** 
+
 Data initialization (repo + naming + schemas)  
 Bronze layer ingestion + validation  
 Silver layer cleansing + correctness checks  
