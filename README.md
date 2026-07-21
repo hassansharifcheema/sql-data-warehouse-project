@@ -4,7 +4,7 @@ An end-to-end SQL Server Data Warehouse project implementing the Medallion Archi
 
 **Tech Stack**
 
-**Database:** Microsoft SQL Server 
+**Database:** Microsoft SQL Server  
 
 **Language:** T-SQL 
 
