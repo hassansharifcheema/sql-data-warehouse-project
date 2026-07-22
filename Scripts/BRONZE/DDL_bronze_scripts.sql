@@ -10,7 +10,7 @@ run the script to redefine the DDL structure of 'bronze' Tables.
 */
 -- TABLES FROM CRM
 IF OBJECT_ID('bronze.crm_cust_info' , 'U') IS NOT NULL
-	DROP TABLE bronze.crm_cust_info;[
+	DROP TABLE bronze.crm_cust_info;
 
 CREATE TABLE bronze.crm_cust_info(
 cst_id int,
