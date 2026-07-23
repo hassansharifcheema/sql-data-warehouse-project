@@ -2,6 +2,14 @@
 ====================================================================================================
 This scipt as a whole creates a stored procedure to load data in silver tables from bronze tables 
 every time you will run it it will updates 
+----------------------------------------------------------------------------------------------------
+prcedure: 
+	1. truncate the silver tables 
+	2. load fresh data after cleaning and standerdizing it according to need and quality of data 
+Parameters:
+		NONE
+Usage :
+		exec silver.load_silver
 ====================================================================================================
 */
 create or alter procedure silver.load_silver AS
