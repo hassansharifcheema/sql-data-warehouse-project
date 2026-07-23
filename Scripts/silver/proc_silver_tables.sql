@@ -1,4 +1,10 @@
-	create or alter procedure silver.load_silver AS
+/*
+====================================================================================================
+This scipt as a whole creates a stored procedure to load data in silver tables from bronze tables 
+every time you will run it it will updates 
+====================================================================================================
+*/
+create or alter procedure silver.load_silver AS
 	BEGIN
 		declare @starttime datetime, @endtime datetime,@batch_start_time datetime,@batch_end_time datetime
 	begin try
