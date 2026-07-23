@@ -70,3 +70,17 @@ Data initialization (repo + naming + schemas)
 Bronze layer ingestion + validation  
 Silver layer cleansing + correctness checks  
 Gold layer integration + star schema + catalog  
+## About Me
+
+Hi, I'm Hassan — a BBA Finance student at the University of Gujrat, Punjab, Pakistan, building a portfolio at the intersection of finance and data engineering.
+
+My long-term goal is to work in FinTech or AI in Finance, and this project is part of a deliberate, hands-on progression toward that goal: strengthening my SQL and data warehousing foundations before layering in more advanced tools such as Databricks, LangChain, and financial APIs. I believe in learning by building — every project in this repository reflects a real skill I'm developing, not just a tutorial I followed.
+
+I'm also working toward freelance data analysis work, with a niche in financial data analysis that leverages my finance background alongside technical data skills.
+
+**Connect with me:**
+- 🎓 BBA Finance, University of Gujrat
+- 💼 Interests: FinTech, AI in Finance, Data Science, Blockchain/DeFi
+- 📊 Currently building: a finance-focused data & analytics portfolio
+
+Feel free to explore the repository, and reach out if you'd like to connect or collaborate on finance-adjacent data projects.
